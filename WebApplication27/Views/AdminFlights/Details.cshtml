@@ -1,0 +1,66 @@
+﻿@model WebApplication27.Models.AdminFlight
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AdminFlight</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationFrom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocationFrom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationTO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocationTO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AeroplaneName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AeroplaneName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DepartureTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DepartureTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SeatingCapacity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SeatingCapacity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PlaneID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
